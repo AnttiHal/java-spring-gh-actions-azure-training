@@ -24,7 +24,7 @@ jobs:
       
       - name: Build with Maven
         run: mvn -B package --file pom.xml
-        working-directory: complete
+        working-directory: .
 
       - name: Azure Webapp
         uses: azure/webapps-deploy@v2
